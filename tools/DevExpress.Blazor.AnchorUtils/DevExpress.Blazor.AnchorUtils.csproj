@@ -1,20 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp3.1;netcoreapp3.0;netstandard2.1</TargetFrameworks>
-    <LangVersion>7.3</LangVersion>
-    <RazorLangVersion>3.1</RazorLangVersion>
-    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <TargetFrameworks>netstandard2.1</TargetFrameworks>    
+    <RazorLangVersion>3.0</RazorLangVersion>    
   </PropertyGroup>
 
-  <ItemGroup Condition="$(TargetFramework.Contains('netcoreapp3.'))">
-    <FrameworkReference Include="Microsoft.AspNetCore.App" />
-  </ItemGroup>
-  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.1' ">
-    <PackageReference Include="Microsoft.AspNetCore.Components" Version="3.1.2" />
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components" Version="3.1.4" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="3.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="3.1.4" />
   </ItemGroup>
   
 </Project>
