@@ -15,7 +15,7 @@
         var hrefValue = Attributes["href"].ToString();
         if (hrefValue.StartsWith("#"))
         {
-            hrefValue = NavigationManager.ToAbsoluteUri(NavigationManager.Uri).GetLeftPart(UriPartial.Path) + hrefValue;
+            hrefValue = NavigationManager.ToAbsoluteUri(NavigationManager.Uri).GetLeftPart(UriPartial.Query) + hrefValue;
         }
         return hrefValue;
     }
