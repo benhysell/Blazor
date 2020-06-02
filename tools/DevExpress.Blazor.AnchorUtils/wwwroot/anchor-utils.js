@@ -6,7 +6,7 @@
             var y = element.getBoundingClientRect().top + window.pageYOffset;
             /*The following code line updates a vertical scroll bar's offset for a standard Blazor Visual Studio template. 
 			Update the code to get an offset that is suitable for your application.*/
-            y -= document.querySelector(".main .top-row").offsetHeight;
+            /*y -= document.querySelector(".main .top-row").offsetHeight;*/
             window.scroll(0, y);
         }
     }
