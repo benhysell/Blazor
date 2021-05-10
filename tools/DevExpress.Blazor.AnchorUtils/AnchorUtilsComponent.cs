@@ -40,8 +40,7 @@ namespace DevExpress.Blazor.AnchorUtils {
         void ScrollToAnchor(string anchor = "", bool forceScroll = false)
         {
             if (!string.IsNullOrEmpty(anchor) || forceScroll)
-            {
-                Console.WriteLine($"Anchor {anchor}");
+            {                
                 JSRuntime.InvokeAsync<string>("scrollToAnchor", anchor);
             }
         }
