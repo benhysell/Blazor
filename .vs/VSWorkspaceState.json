@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\tools",
+    "\\tools\\DevExpress.Blazor.AnchorUtils"
   ],
-  "SelectedNode": "\\DevExpress.Blazor.AnchorUtils.sln",
+  "SelectedNode": "\\tools\\DevExpress.Blazor.AnchorUtils\\DevExpress.Blazor.AnchorUtils.sln",
   "PreviewInSolutionExplorer": false
 }
